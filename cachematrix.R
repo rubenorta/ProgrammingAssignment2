@@ -1,11 +1,23 @@
+##
+## How To:
+## 
+## m <- matrix(1,2,3,4,5,6, nrow=2, ncol = 3)
+## my_cache_matrix <- makeCacheMatrix(m)
+## cacheSolve(my_cache_matrix)
+##
+##
+##
 ## name: makeCacheMatrix
 ## params: x, the matrix data
 ## returns: a list of functions that allow to matrix with cache
 ##
 ## description: The function returns an especial kind of matrix that store the value of it inverse
 ##
-matrix  calculates the inverse of a matrix.  creates a special "vector" that includes a list g a function to
-
+## usage:
+##              set: Set the matrix data
+##              get: Get the matrix data 
+##              setinverse: Set the inverse of the matrix
+##              getinverse: Get the inverse ofthe matrix
 makeCacheMatrix <- function(x = matrix()) {
   inverse <- NULL
   set <- function(y) {
